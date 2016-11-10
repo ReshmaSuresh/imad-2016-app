@@ -26,7 +26,7 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/ui/madi.png', function (req, res) {
+app.get('/ui/10954684_1184277164919250_247758682_n.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', '10954684_1184277164919250_247758682_n.jpg'));
 });
 
