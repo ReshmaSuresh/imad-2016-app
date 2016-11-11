@@ -4,8 +4,8 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-var blogs = {
- blog1 : {
+var articles = {
+ article-one : {
      title : 'Blog 1 | Reshma Suresh',
      heading : 'Defeating Dimensions',
      date: 'November 1,2016',
@@ -19,7 +19,7 @@ var blogs = {
                <p> Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here v Content Here  Content HerevContent Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here v Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here v v Content Here Content Here Content Here Content Here Content Here Content Here Content Here v v v Content Here
               </p>`
  },
- blog2 : {
+ article-two : {
      title : 'Blog 2 | Reshma Suresh',
      heading : 'Eternal Love',
      date: 'November 5,2016',
@@ -33,7 +33,7 @@ var blogs = {
                <p> Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here v Content Here  Content HerevContent Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here v Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here v v Content Here Content Here Content Here Content Here Content Here Content Here Content Here v v v Content Here
               </p>`
  },
- blog3 : {
+ article-three : {
     title : 'Blog 3 | Reshma Suresh',
      heading : 'Get Back Up!',
      date: 'November 10,2016',
@@ -92,7 +92,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function(req, res) {
-    res.send(createTemplate(blog1));
+    res.send(createTemplate(article-one));
 });
 app.get('/article-two', function(req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
