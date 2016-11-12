@@ -93,7 +93,7 @@ app.get('/', function (req, res) {
 var count=0;
 app.get('/counter', function (req,res) {
    counter=counter+1;
-   res.send(counter.toString())
+   res.send(counter.toString());
 });
 
 app.get('/:blogNo', function(req, res) {
