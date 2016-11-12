@@ -22,10 +22,12 @@ body {
 .container{
                 max-width: 800px;
                 margin: 0 auto;
-                font-family: "Trebuchet MS", Helvetica, sans-serif;
+                font-family: "Arial Black", Gadget, sans-serif;
                 background: white;
      }
  .container1{
             background: white;
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            line-height: 200%;
             margin: 40px;
 }
