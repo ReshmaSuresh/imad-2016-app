@@ -60,6 +60,7 @@ var blogs = {
            ${title}
         </title>
         <link href="/ui/style.css" rel="stylesheet" />
+        <link href="/ui/main.js"/>
         </head>
        <body bgcolor=PINK>
          
