@@ -60,7 +60,6 @@ var blogs = {
            ${title}
         </title>
         <link href="/ui/style.css" rel="stylesheet" />
-        <link href="/ui/main.js"/>
         </head>
        <body bgcolor=PINK>
          
@@ -82,6 +81,8 @@ var blogs = {
                      <div class="footer">
                         <button id="likebutton">Like</button><span id="likes"> 0 </span> Likes!
                      </div>
+                     <script type="text/javascript" src="/ui/main.js">
+                     </script>
                 
                </div>
            </div>
