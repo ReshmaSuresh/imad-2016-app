@@ -23,7 +23,8 @@ body {
                 max-width: 800px;
                 margin: 0 auto;
                 font-family: "Palatino Linotype", "Book Antiqua", Palatino, seri;
-                background: white;
+                color: white;
+                background: turquoise;
      }
  .container1{
             background: white;
