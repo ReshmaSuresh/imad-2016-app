@@ -32,7 +32,10 @@ body {
             line-height: 180%;
             margin: 40px;
 }
-.blog1{    
+.container3{
+    color:white;
+}
+.blog1{   
         background-image: url("http://www.profilebrand.com/imgs/layouts/11artistic/1118/1118_L-rainbow-peace-signs.jpg");
 }
 .blog2{
