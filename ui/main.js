@@ -1,7 +1,7 @@
-var button=document.getElementById("likebutton");
-var likebutton=0;
+var button=document.getElementById("counter");
+var counter=0;
 button.onclick= function(){
-    likebutton=likebutton+1;
-    var span=document.getElementById("likes");
-    span.innerHTML=likebutton.toString();
+    counter=counter+1;
+    var span=document.getElementById("count");
+    span.innerHTML=counter.toString();
 };
