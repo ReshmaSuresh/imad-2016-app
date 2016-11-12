@@ -24,7 +24,7 @@ body {
                 margin: 0 auto;
                 font-family: "Palatino Linotype", "Book Antiqua", Palatino, seri;
                 color: white;
-                background: turquoise;
+                background-image: url("madi.png");
      }
  .container1{
             background: turquoise;
