@@ -23,13 +23,12 @@ body {
                 max-width: 800px;
                 margin: 0 auto;
                 font-family: "Palatino Linotype", "Book Antiqua", Palatino, seri;
-                color: black;
-                background: white;
+                color: white;
+                background: turquoise;
      }
  .container1{
-            background: white;
+            background: turquoise;
             font-family: "Trebuchet MS", Helvetica, sans-serif;
             line-height: 180%;
-            color : turquoise;
             margin: 40px;
 }
