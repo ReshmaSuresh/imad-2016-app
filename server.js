@@ -79,7 +79,7 @@ var blogs = {
                          ${content}
                      </div>
                      <div class="footer">
-                        <button id="likebutton">Like</button><span id="likes">0 </span> Likes!
+                        <button id="likebutton">Like</button><span id="likes"> 0 </span> Likes!
                      </div>
                 
                </div>
