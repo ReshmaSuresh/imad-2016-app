@@ -81,11 +81,10 @@ var blogs = {
                      <div class="footer">
                         <button id="likebutton">Like</button><span id="likes"> 0 </span> Likes!
                      </div>
-                     <script type="text/javascript" src="/ui/main.js">
-                     </script>
-                
                </div>
            </div>
+           <script type="text/javascript" src="/ui/main.js">
+           </script>
        </body>
     </html>
     
