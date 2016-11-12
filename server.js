@@ -95,10 +95,12 @@ app.get('/counter', function (req,res) {
    counter=counter+1;
    res.send(counter.toString());
 });
-
+var count=0;
 app.get('/:blogNo', function(req, res) {
+    count=count+1;
     var blogNo= req.params.blogNo;
     res.send(createTemplate(blogs[blogNo]));
+    res.send(count.toString());
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
