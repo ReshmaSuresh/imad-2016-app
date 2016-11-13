@@ -61,6 +61,8 @@ var blogs = {
         </title>
         <link href="/ui/style.css" rel="stylesheet" />
         </head>
+         <script type="text/javascript" src="/ui/main.js">
+         </script>
        <body bgcolor=PINK>
          
            <div class="container">
@@ -83,8 +85,6 @@ var blogs = {
                      </div>
                </div>
            </div>
-         <script type="text/javascript" src="/ui/main.js">
-         </script>
        </body>
     </html>
     
