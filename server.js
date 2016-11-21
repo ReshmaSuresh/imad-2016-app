@@ -73,7 +73,7 @@ var blogs = {
          
            <div class="container">
                <div>
-                   <a href="/"><b>Home</b></a>
+                   <a href="/"><b><button>Home</button></b></a>
                </div>
                <hr/>
                <div>
