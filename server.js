@@ -120,6 +120,9 @@ app.get('/counter', function (req,res) {
    counter=counter+1;
    res.send(counter.toString());
 });
+app.get('/about1', function(req,res) {
+    res.send('Heklo');
+});
 app.get('/:blogNo', function(req, res) {
     var blogNo= req.params.blogNo;
     res.send(createTemplate(blogs[blogNo]));
