@@ -61,7 +61,9 @@ submit.onclick= function(){
                 else if(request.status === 403){
                     alert("User Name/Password Incorrect");
                 }
-                
+                else (request.status === 500){
+                    alert("Something Went Wrong! Please Try Again Later");
+                }
             }
             
         };
@@ -70,6 +72,7 @@ submit.onclick= function(){
        console.log('username');
        console.log('passord');
        request.open('POST','http://reshmasuresh.imad.hasura-app.io/login' + comment,true);
-       request.send(JSON.stringify({username : username, password : password}));
+       request.setRequestHeader('Content-Type','application/json');
+       request.send(JSON.stringify({username : username , password : password}));
   
 };
