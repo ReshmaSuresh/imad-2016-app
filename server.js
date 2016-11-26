@@ -51,10 +51,8 @@ app.use(bodyParser.json());
                         <button id="likebutton">Like</button><span id="likes"> 0 </span> Likes!<br>
                         <b><u>Comments</u></b><br>
                         <input type="text" id="comment" placeholder="Write a comment..."></input>
-                        <input type="submit" value="Submit"></iput>
-                        <ul>
-                            <li>C1</li>
-                            <li>C2</li>
+                        <input type="submit" id="submit" value="Submit"></iput>
+                        <ul id="commentslist">
                         </ul>
                      </div>
                </div>
