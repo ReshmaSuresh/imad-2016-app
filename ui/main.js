@@ -49,7 +49,7 @@ submit.onclick= function(){
 
 
 
-/*var submit = document.getElementById('submit');
+var submit = document.getElementById('submit1');
 submit.onclick= function(){
     var request = new XMLHttpRequest();
         request.onreadystatechange = function () {
@@ -67,9 +67,10 @@ submit.onclick= function(){
             }
             
         };
-       var commentInput = document.getElementById('comment');
+       var username = document.getElementById('username').value;
+       var password = document.getElementById('password').value;
        var comment = commentInput.value;
        request.open('POST','http://reshmasuresh.imad.hasura-app.io/submit-comment?comment=' + comment,true);
-       request.send(null);
+       request.send(JSON.stringify({username : username, password : password}));
   
 };
