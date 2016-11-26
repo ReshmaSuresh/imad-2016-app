@@ -48,5 +48,6 @@ body {
 }
 .header{
     color : white;
-    font-family : Century Gothic, sans-serif;
+    font-weight : bold;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;;
 }
