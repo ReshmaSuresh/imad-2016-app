@@ -123,10 +123,23 @@ app.get('/counter', function (req,res) {
 app.get('/about', function(req,res) {
     res.sendFile(path.join(__dirname, 'ui', 'about.html'));
 });
-app.get('/:blogNo', function(req, res) {
-    var blogNo= req.params.blogNo;
-    res.send(createTemplate(blogs[blogNo]));
+app.get('/blogs/:blogNo', function(req, res) {
+   // var blogNo= req.params.blogNo;
+    pool.query("SELECT * FROM blogs WHERE title = " + req.params.blogNo, function(err,result) {
+        if(err) {
+            res.status(500).send(err.toString());
+        }
+        else {
+            if (result.rows.length===0) {
+                res.status(404).send("Article Not Found");
+            }else {
+                 var blogData = result.rows[0];
+                 res.send(createTemplate(blogData));
+            }
+        }
+    });
 });
+  
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
