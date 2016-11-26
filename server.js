@@ -12,7 +12,7 @@ var config = {
 
 var app = express();
 app.use(morgan('combined'));
-var blogs = {
+/*var blogs = {
  blog1 : {
      title : 'Blog 1 | Reshma Suresh',
      heading : 'Defeating Dimensions',
@@ -55,7 +55,7 @@ var blogs = {
                <p> Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here v Content Here  Content HerevContent Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here v Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here Content Here v v Content Here Content Here Content Here Content Here Content Here Content Here Content Here v v v Content Here
               </p>` 
  }
-};
+};*/
  function createTemplate (data){
      var title= data.title;
      var heading= data.heading;
