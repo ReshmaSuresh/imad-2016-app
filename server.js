@@ -81,7 +81,7 @@ app.get('/about', function(req,res) {
 });
 app.get('/blogs/:blogNo', function(req, res) {
    // var blogNo= req.params.blogNo;
-    pool.query("SELECT * FROM blogs WHERE title = '" + req.params.blogNo + "'", function(err,result) {
+    pool.query("SELECT * FROM blogs WHERE title = $1" , [req.params.blogNo] , function(err,result) {
         if(err) {
             res.status(500).send(err.toString());
         }
