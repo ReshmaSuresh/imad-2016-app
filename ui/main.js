@@ -34,7 +34,7 @@ submit.onclick= function(){
             }
             
         };
-       request.open('GET','http://reshmasuresh.imad.hasura-app.io/counter',true);
+       request.open('GET','http://reshmasuresh.imad.hasura-app.io/submit-comment?comment=' + comment,true);
        request.send(null);
   
 };
