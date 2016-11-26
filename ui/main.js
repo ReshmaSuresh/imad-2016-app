@@ -41,14 +41,6 @@ submit.onclick= function(){
   
 };
 
-
-
-
-
-
-
-
-
 var submit = document.getElementById('submit1');
 submit.onclick= function(){
     var request = new XMLHttpRequest();
@@ -56,13 +48,13 @@ submit.onclick= function(){
             if(request.readyState===XMLHttpRequest.DONE){
                 if(request.status === 200){
                    console.log('user logged!');
-                   alert("Logged in Successfully!");
+                   alert('Logged in Successfully!');
                 }
                 else if(request.status === 403){
-                    alert("User Name/Password Incorrect");
+                    alert('User Name/Password Incorrect');
                 }
-                else (request.status === 500){
-                    alert("Something Went Wrong! Please Try Again Later");
+                else if (request.status === 500){
+                    alert('Something Went Wrong! Please Try Again Later');
                 }
             }
             
@@ -71,7 +63,7 @@ submit.onclick= function(){
        var password = document.getElementById('password').value;
        console.log('username');
        console.log('passord');
-       request.open('POST','http://reshmasuresh.imad.hasura-app.io/login' + comment,true);
+       request.open('POST','http://reshmasuresh.imad.hasura-app.io/login',true);
        request.setRequestHeader('Content-Type','application/json');
        request.send(JSON.stringify({username : username , password : password}));
   
