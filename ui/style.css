@@ -47,7 +47,7 @@ body {
     background-image: url("http://static.tumblr.com/8deca723085039d435dd7008ff4d9780/wpyqy5v/B0Qo3ch19/tumblr_static_176bz5azxr8ggwwckcock440s.jpg");
 }
 .header{
-    color : blue;
-    font-weight : #135f84;
+    color : #135f84;
+    font-weight : normal;
     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 }
