@@ -15,3 +15,15 @@
        request.send(null);
         
     };
+var commentInput = document.getElementById('comment');
+var comment = commentInput.value;
+var submit = document.getElementById('submit');
+submit.onclick= function(){
+    var comments = ['nice', 'good','okay'];
+    var list = '';
+    for(var i=0;i<comments.length;i++) {
+        list += '<li>' + comments[i] + '</li>';
+    }
+    var ul =  document.getElementById('commentslist');
+    ul.innerHTML=list;
+};
