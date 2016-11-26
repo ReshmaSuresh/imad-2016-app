@@ -100,12 +100,14 @@ app.post('/create-user', function(req,res){
         
     });
 });
-var names =[];
-app.get('submit-comment/:comment', function(req,res) {
+
+var comments =[];
+app.get('/submit-comment/:comment', function(req,res) {
     var comment = req.params.comment;
     comments.push(comment);
     res.send(JSON.stringify(comments));
 });
+
 app.post('/login', function(req,res){
     var username = req.body.username;
     var password = req.body.password;
