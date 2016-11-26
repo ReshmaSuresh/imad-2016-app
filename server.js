@@ -83,7 +83,7 @@ var blogs = {
                </div>
                <div class="container1" >
                      <div>
-                        <p> ${date}</p>
+                        <p> ${date.toDateString}</p>
                      </div>
                      <div>
                          ${content}
