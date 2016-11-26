@@ -49,6 +49,12 @@ app.use(bodyParser.json());
                      </div>
                      <div class="footer">
                         <button id="likebutton">Like</button><span id="likes"> 0 </span> Likes!
+                        <input type="text" id="comment" placeholder="comment"></input>
+                        <input type="submit" value="Submit"></iput>
+                        <ul>
+                            <li>C1</li>
+                            <li>C2</li>
+                        </ul>
                      </div>
                </div>
            </div>
