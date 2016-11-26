@@ -28,7 +28,7 @@ body {
      }
  .container1{
             background: turquoise;
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            font-family: Trebuchet MS, Helvetica, sans-serif;
             line-height: 180%;
             padding-left: 40px;
             padding-right: 40px;
@@ -47,5 +47,5 @@ body {
 }
 .header{
     color : grey;
-    font-family : "Century Gothic, sans-serif;;";
+    font-family : Century Gothic, sans-serif;
 }
